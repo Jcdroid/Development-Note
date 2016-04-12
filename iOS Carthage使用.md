@@ -1,4 +1,4 @@
-#iOS依赖工具使用
+#iOS Carthage使用
 
 ###CocoaPods
 

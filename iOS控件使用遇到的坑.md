@@ -1,0 +1,4 @@
+#iOS控件使用遇到的坑
+
+###UICollectionViewCell
+在使用UICollectionViewCell时，遇到了而一个奇怪的问题：使用new关键字创建的UICollectionViewCell子类居然不执行init方法？后面发现是执行了initWithFrame方法。

@@ -1,7 +1,30 @@
 #iOS响应式编程之ReactiveCocoa
 
 ![](http://limboy.me/image/FRP_ReactiveCocoa_large.png)
+###RACStream
 
+###RACStream子类：RACSignal
+
+###RACStream子类：RACSequence
+
+####1. filter
+
+#####信号过滤和队列过滤
+	```	
+	[[dictionary.rac_valueSequence.signal filter:^BOOL(NSNumber *checking) {
+             return checking.boolValue;
+             }] subscribeNext:^(id x) {
+             NSLog(@"%@", x);
+             }];
+	NSArray *checkArray = [[dictionary.rac_valueSequence filter:^BOOL(NSNumber *checking) {
+                return checking.boolValue;
+            }] array];
+    ```
+
+###问题
+1. self.textField.rac_textSignal和RACObserve(self.textField, text)的区别？
+	
+	答：从源码中可以知道前者是textField文字改变的delegate发出的信号，而后者是对textField对象的text赋值变化时发出的信号
 
 ###参考
 * [ReactiveCocoa v2.5 源码解析之架构总览](http://blog.leichunfeng.com/blog/2015/12/25/reactivecocoa-v2-dot-5-yuan-ma-jie-xi-zhi-jia-gou-zong-lan/)
