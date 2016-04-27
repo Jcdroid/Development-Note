@@ -29,6 +29,20 @@ iOS分为开发和发布证书
 ### 企业证书
 不受UUID的限制，但是个人和公司证书，需要提供UUID
 
+#### 企业证书重签名
+> 完整的重签名`shell`脚本，[在这里](files/anewsign.sh)
+> 
+> 1. 需要把里面的`<name>`和`new name`改为你需要重签名的`ipa`名字和重签名后的`ipa`名字；
+> 2. 把重签名需要用的描述文件更名为`embedded.mobileprovision`；
+> 3. 还需要下载[entitlements.plist](files/entitlements.plist)并修改其中的`pplication-identifier`、`keychain-access-groups`
+> 4. 最后把`anewsign.sh`、`ipa`、`mobileprovision`、`entitlements.plist`放在一个目录下执行`anewsign.sh`就可以自动生成重签名的`ipa`。
+
+1. 解压：`unzip <name>.ipa`
+2. 删除：`rm -rf Payload/<name>.app/_CodeSignature`
+3. 更换描述文件：`cp embedded.mobileprovision Payload/<name>.app/embedded.mobileprovision`
+4. 重签名：`codesign -f -s "iPhone Distribution: TEST Electronics Co., Ltd. (6AP32F8XFF)" --entitlements entitlements.plist --resource-rules Payload/Remay-iOS.app/ResourceRules.plist Payload/<name>.app`
+5. 压缩成ipa包：`zip -r <new name>.ipa Payload`
+
 ### 获取AppStore应用的IPA包
 在iTunes中下载IPA，然后用Finder查看即可。
 [如何获取AppStore应用的IPA包](http://www.jianshu.com/p/4ee125401340)
@@ -61,7 +75,7 @@ iOS分为开发和发布证书
 
 
 ### AppStore发布审核
-1. 遇到元数据被拒绝，要不要提交以供审核？
+1. 遇到元数据被拒绝，要不要提交以供审核？ 
 > 只要回复`Apple`发过来的邮件中的问题就行，不需要点击提交以供审核，大概需要等待2天。我大概等待2天不到。期间`iTunes Connect`中一直显示着元数据被拒的小红点，不要急，等待几天就行了。
 
 
