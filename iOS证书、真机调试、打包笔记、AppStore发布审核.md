@@ -84,7 +84,7 @@ iOS分为开发和发布证书
 > a. 按照你那个链接下载，https://developer.apple.com/certificationauthority/AppleWWDRCA.cer，并安装。
 > b. 在keychains里选择login,然后点选Certificates，在这个界面，选择工具栏的View -> Show Expired Certificates，这时候你会发现一个过期的“WWDR Certificate”（Apple Worldwide Developer Relations Certification Authority），删除它。
 > c. 在System的那一栏也有这个过期的“WWDR Certificate”，一并删除它。
-> 4. 不出意外你的证书那里从 “This certificate has an invalid issuer”（此证书的签发者无效）变成了 “This certificate is valid”了。
+> d. 不出意外你的证书那里从 “This certificate has an invalid issuer”（此证书的签发者无效）变成了 “This certificate is valid”了。
 
 2. Your build settings specify a provisioning profile with the UUID “”, however, no such provisioning profile was found
 > 可以Clean后重试，或者加上关闭Xcode。
