@@ -53,6 +53,17 @@
 ###代码覆盖率
 Xcode提供了很好的查看代码覆盖率的工具。首先打开`Edit Scheme`-`Test`-勾选`Gather coverage data`，再次运行测试，选中最后一次`Test`，选择Coverage即可查看本次运行测试整体的代码覆盖率情况
 
+### 常见错误
+* 运行`test case`时出现下面的错误
+> ld: file not found: /Users/MacBookPro/Library/Developer/Xcode/DerivedData/Social_Events-cfnteabiivwfdzcoulzznhmgobhy/Build/Products/Debug-iphoneos/Social_Events.app/Social_Events
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+**原因**：这个错误的原因是修改了工程的`Product Name`，而`Test Host`
+![image](images/633AF452-7D56-40BD-9BE2-C33D62052280.png)
+
+**解决办法**：`Project` - 选中`Target 
+xxx-iOSTest` - `General` - `Testing` - `Host Application`，下拉选项选中自己的工程，如下图所示
+![image](images/51B015C7-1896-47E8-B6F9-C22892932B27.png)
 
 ###参考
 * [objccn测试](http://objccn.io/issue-15/)* 
@@ -68,3 +79,4 @@ Xcode提供了很好的查看代码覆盖率的工具。首先打开`Edit Scheme
 * [Xcode 7 UI 测试初窥](http://onevcat.com/2015/09/ui-testing/)
 * [截图测试-ios-snapshot-test-case](https://github.com/facebook/ios-snapshot-test-case)
 * [KIF](https://github.com/kif-framework/KIF)
+* [ld: file not found: linker command failed with exit code 1](http://stackoverflow.com/questions/26665196/ld-file-not-found-linker-command-failed-with-exit-code-1-use-v-to-see-invoca)
