@@ -134,6 +134,11 @@ XCode7开始提供四种证书选择，如下图
 2. 遇到二进制文件被拒绝，要不要提交以供审核？如图![image](images/A9165F1F-8883-4756-98DB-95437276E153.png)
 > 和第一个问题一样，只要回复`Apple`发过来的邮件中的问题就行，不需要点击提交以供审核，这次在一天之内就审核通过了。![image](images/F9DDC67A-65AC-436A-8531-A17A78EF7D73.png)
 
+### 审核被拒常用英文
+* 需要重新打包上传时：I see. This issue is my code error and I will upload a new binary to correct this issue.
+* 数据上的错误引起crash，不需要重新打包时：I see. This issue is caused by our server to return data errors, has now been repaired.
+Please re-review, thank you.
+
 
 ### 问题
 1. 钥匙串中显示此证书的签发者无效？
@@ -169,6 +174,9 @@ XCode7开始提供四种证书选择，如下图
 7. 运行项目时出现下面的错误，如图![image](images/0E78EB6C-22C6-464F-B506-F6329934A14D.png)
 > 卸载已安装的APP，重新运行项目即可
 
+8. Xcode8打包APP上传到iTunes后，不出现在构建版本中
+> 因为iOS10以后Apple更注重保护用户权限,在任何需要使用设备权限的地方都需要提前声明，如加上对应的相机和相册权限声明。见[这里](http://blog.csdn.net/qxuewei/article/details/52790357)
+
 ### 参考
 * [iOS 开发流程笔记](https://github.com/leecade/ios-dev-flow)
 * [IOS应用程序发布到苹果APP STORE完整流程使用教程](http://www.asotops.com/article-11-1.html)
@@ -176,3 +184,4 @@ XCode7开始提供四种证书选择，如下图
 * [App Store审核总结](http://www.devlizy.com/appstoreshen-he-zong-jie/)
 * [IPA的4种打包方式](http://blog.csdn.net/joneos/article/details/49431885)
 * [Xcode 7.2 no matching provisioning profiles found](http://stackoverflow.com/questions/34346436/xcode-7-2-no-matching-provisioning-profiles-found)
+* [ iOS-Xcode上传后iTunes Connect构建版本不显示](http://blog.csdn.net/qxuewei/article/details/52790357) 

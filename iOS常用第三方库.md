@@ -6,6 +6,13 @@
 * [XLPagerTabStrip](https://github.com/xmartlabs/XLPagerTabStrip) 实现Android PagerTabStrip
 
 
+### 项目
+* [SwiftHN](https://github.com/Dimillian/SwiftHN) 🔶
+* [HackerNews](https://github.com/amitburst/HackerNews) 🔶
+* [newsyc](https://github.com/Xuzz/newsyc)
+
+
+
 ### 资源
 
 * [open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps)

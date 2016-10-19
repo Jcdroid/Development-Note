@@ -46,7 +46,7 @@ ndefined symbols for architecture arm64:
 ld: symbol(s) not found for architecture arm64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 ```
-解决办法：导入`libc++.dylib`。
+解决办法：导入`libc++.tbd`和`libz.tbd`。
 
 ### UI的一些异常
 1. UI可以正常显示，但是对其进行（点击，滑动等）操作时，却操作不了。

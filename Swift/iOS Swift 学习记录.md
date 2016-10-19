@@ -1,5 +1,6 @@
 # iOS Swift 学习记录
 
+* 查看swift版本：`xcrun swift -version`
 * 集成UIViewController自定义构造方法
 > 1. 在 Swift 中, 类的初始化器有两种, 分别是Designated Initializer（指定初始化器）和Convenience Initializer（便利初始化器）
 > 2. 如果子类没有定义任何的指定初始化器, 那么会默认继承所有来自父类的指定初始化器。

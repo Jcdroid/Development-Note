@@ -17,3 +17,5 @@
 15. 轮播图
 16. 支付 
 17. DropdownMenu(参考[DropdownMenu](https://github.com/nmattisson/DropdownMenu))
+18. [DOPDropDownMenu](https://github.com/12207480/DOPDropDownMenu-Enhanced)
+18. 更新提示（[Harpy](https://github.com/ArtSabintsev/Harpy)）
