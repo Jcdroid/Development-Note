@@ -1,0 +1,28 @@
+# Android Fragment与Activity
+
+![image](images/CD0E93EC-ACC1-435D-91EF-E8C60248697F.png)
+
+### Fragment
+> 注意：常用Fragment，可能会经常遇到这样Activity状态不一致：State loss这样的错误。主要是因为：commit方法一定要在Activity.onSaveInstanceState()之前调用。
+
+* 生命周期![image](images/4CE00BDC-2003-464D-8CCC-4366F5645A90.png)
+* 使用静态工厂方法newInstance(...)来获取Fragment实例
+* 为什么fragment会重叠？ 
+> 原因是FragmentManager帮我们管理Fragment，当发生“内存重启”，他会从栈底向栈顶的顺序一次性恢复Fragment；
+但是因为没有保存Fragment的mHidden属性，默认为false，即show状态，所以所有Fragment都是以show的形式恢复，我们看到了界面重叠。
+（如果是replace，恢复形式和Activity一致，只有当你pop之后上一个Fragment才开始重新恢复，所有使用replace不会造成重叠现象）
+
+### Activity
+
+* 生命周期![image](images/454F1F33-71E9-40F8-83FB-5AA1C835E78F.png)
+
+
+### 参考
+* [Android Fragment 真正的完全解析（上）](http://blog.csdn.net/lmj623565791/article/details/37970961)
+* [Fragment全解析系列（一）：那些年踩过的坑](http://www.jianshu.com/p/d9143a92ad94)
+* [Fragment学习](https://lijunjieone.gitbooks.io/android/content/fragmentxue_xi.html)
+* [Android Fragment](https://hzj163.gitbooks.io/android-fragment/content/index.html)
+* [关于 Android，用多个 activity，还是单 activity 配合 fragment？](https://www.zhihu.com/question/39662488)
+* [我为什么主张反对使用Android Fragment](https://asce1885.gitbooks.io/android-rd-senior-advanced/content/wo_wei_shi_yao_zhu_zhang_fan_dui_shi_yong_android_fragment.html)
+* [Android Fragment使用(一) 基础篇 温故知新](http://mengdd.github.io/Android/2016/05/31/android-fragment-usage-1-basic-part/)
+* [Android Fragment使用(二) 嵌套Fragments (Nested Fragments) 的使用及常见错误](http://mengdd.github.io/Android/2016/06/02/android-fragment-usage-2-nested-fragments/)

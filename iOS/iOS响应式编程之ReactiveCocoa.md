@@ -1,15 +1,26 @@
 #iOS响应式编程之ReactiveCocoa
 
 ![](http://limboy.me/image/FRP_ReactiveCocoa_large.png)
-###RACStream
 
-###RACStream子类：RACSignal
+## Core 
+### RACStream
 
-###RACStream子类：RACSequence
+#### RACStream子类：RACSignal
+##### RACSignal的重复订阅
 
-####1. filter
+###### RACMulticastConnection
 
-#####信号过滤和队列过滤
+###### Replay、ReplayLast、ReplayLazily
+
+#### RACSubject的信号重接收订阅
+
+##### RACReplaySubject
+
+#### RACStream子类：RACSequence
+
+##### 1. filter
+
+###### 信号过滤和队列过滤
 	```	
 	[[dictionary.rac_valueSequence.signal filter:^BOOL(NSNumber *checking) {
              return checking.boolValue;
@@ -19,9 +30,14 @@
 	NSArray *checkArray = [[dictionary.rac_valueSequence filter:^BOOL(NSNumber *checking) {
                 return checking.boolValue;
             }] array];
-    ```
+    ```    
 
-###问题
+## UI相关
+
+### UITableViewCell
+#### rac_prepareForReuseSignal
+
+## 问题
 1. self.textField.rac_textSignal和RACObserve(self.textField, text)的区别？
 	
 	答：从源码中可以知道前者是textField文字改变的delegate发出的信号，而后者是对textField对象的text赋值变化时发出的信号
@@ -34,3 +50,7 @@
 * [ReactiveCocoa与Functional Reactive Programming](http://limboy.me/ios/2013/06/19/frp-reactivecocoa.html)
 * [ReactiveCocoa入门教程](http://www.cocoachina.com/ios/20150123/10994.html)
 * [ReactiveCocoa](http://www.ios122.com/2015/10/reactivecocoa/)
+* [iOS-ReactiveCocoa使用之细说信号的订阅](http://tangent.gift/2016/04/10/iOS-ReactiveCocoa使用之细说信号的订阅/)
+* [说说ReactiveCocoa2](http://limboy.me/ios/2013/12/27/reactivecocoa-2.html)
+* [ReactiveCocoa2实战](http://limboy.me/ios/2014/06/06/deep-into-reactivecocoa2.html)
+* [iOS开发-ReactiveCocoa(RAC)框架](http://yimouleng.com/2015/12/20/ios-ReactiveCocoa/)
