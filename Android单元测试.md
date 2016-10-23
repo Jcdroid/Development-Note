@@ -18,16 +18,18 @@
 
 1. **working directory 设置为$MODULE_DIR$**
 
-如果在测试过程遇见如下问题，解决的方式就是设置working directory的值：
+如果在测试过程遇见如下问题：
 
 ``` 
 java.io.FileNotFoundException: build\intermediates\bundles\debug\AndroidManifest.xml (系统找不到指定的路径。) 
 java.lang.RuntimeException: build\intermediates\bundles\debug\AndroidManifest.xml not found or not a file; it should point to your project's AndroidManifest.xml
 ```
 
-设置方法如下图所示:
+[解决的方式](http://robolectric.org/getting-started/#Note for Linux and Mac Users)就是设置working directory的值，设置方法如下图所示:
 
-Edit Configurations
+Edit Configurations -> Defaults -> JUnit，working directory改为`$MODULE_DIR$`
+
+![](http://i.stack.imgur.com/WN0EQ.png)
 
 ![](http://upload-images.jianshu.io/upload_images/638283-1b52f9dad9dfeb3d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
