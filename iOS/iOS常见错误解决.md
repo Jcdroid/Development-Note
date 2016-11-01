@@ -12,7 +12,7 @@
 > 注意在pod里面导入了第三方包，然后在vendor重复导入了一遍将出现这个错误。
 	
 4. **ld: warning: directory not found for option “xxx/xxx”**
-> 在`Project`->`Target`->`Build Settings`的`Library Search Paths`和`Framework Search Paths`中删掉编译报`warning`的路径即OK。具体错误如下图![image](images/241EA46C-57C4-46EE-AF89-77B5409BBE4D.png)
+> 在`Project`->`Target`->`Build Settings`的`Library Search Paths`和`Framework Search Paths`中删掉编译报`warning`的路径即OK。具体错误如下图![image](../images/241EA46C-57C4-46EE-AF89-77B5409BBE4D.png)
 
 #### Swift工程编译错误
 1. **No such module 'xxx'**

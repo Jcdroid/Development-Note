@@ -7,7 +7,7 @@
 ### xcodebuild打包
 
 ##### xcodebuild介绍
-`xcodebuild`是苹果提供的打包项目或者工程的命令，可以使用`man xcodebuild`来查看[`man page`](files/xcodebuild手册.pdf)。
+`xcodebuild`是苹果提供的打包项目或者工程的命令，可以使用`man xcodebuild`来查看[`man page`](../files/xcodebuild手册.pdf)。
 
 ##### xcodebuild常用命令
 * `xcodebuild -version`：查看版本
@@ -34,7 +34,7 @@
 2. 打包：`xctool -workspace PackageExample.xcworkspace -scheme PackageExample -configuration ${buildConfiguration} archive -archivePath ${buildPath}`
 3. 导出ipa包：`xcodebuild -exportArchive -exportFormat IPA -archivePath ${buildPath} -exportPath ${ipaName} -exportProvisioningProfile "$profile"`
 
-[完整的脚本](files/autoarchive.sh)
+[完整的脚本](../files/autoarchive.sh)
 
 ### 持续集成与管理
 见[这里](iOS持续集成与管理.md)

@@ -59,11 +59,11 @@ Xcode提供了很好的查看代码覆盖率的工具。首先打开`Edit Scheme
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
 **原因**：这个错误的原因是修改了工程的`Product Name`，而`Test Host`
-![image](images/633AF452-7D56-40BD-9BE2-C33D62052280.png)
+![image](../images/633AF452-7D56-40BD-9BE2-C33D62052280.png)
 
 **解决办法**：`Project` - 选中`Target 
 xxx-iOSTest` - `General` - `Testing` - `Host Application`，下拉选项选中自己的工程，如下图所示
-![image](images/51B015C7-1896-47E8-B6F9-C22892932B27.png)
+![image](../images/51B015C7-1896-47E8-B6F9-C22892932B27.png)
 
 ###参考
 * [objccn测试](http://objccn.io/issue-15/)* 

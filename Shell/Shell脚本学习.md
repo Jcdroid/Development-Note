@@ -1,4 +1,5 @@
 Shell脚本学习
+---
 
 ###运行Shell
 * 方法1：在Mac的终端中，cd到shell的目录，然后执行`./<file.sh>`就可以运行对应的shell脚本，**如果出现`Permission denied`，可使用`chmod +x <file.sh>`或者` chmod 777 <file.sh>`来获得权限后，再重试**`./<file.sh>`即可

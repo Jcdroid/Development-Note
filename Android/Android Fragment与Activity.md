@@ -1,11 +1,11 @@
 # Android Fragment与Activity
 
-![image](images/CD0E93EC-ACC1-435D-91EF-E8C60248697F.png)
+![image](../images/CD0E93EC-ACC1-435D-91EF-E8C60248697F.png)
 
 ### Fragment
 > 注意：常用Fragment，可能会经常遇到这样Activity状态不一致：State loss这样的错误。主要是因为：commit方法一定要在Activity.onSaveInstanceState()之前调用。
 
-* 生命周期![image](images/4CE00BDC-2003-464D-8CCC-4366F5645A90.png)
+* 生命周期![image](../images/4CE00BDC-2003-464D-8CCC-4366F5645A90.png)
 * 使用静态工厂方法newInstance(...)来获取Fragment实例
 * 为什么fragment会重叠？ 
 > 原因是FragmentManager帮我们管理Fragment，当发生“内存重启”，他会从栈底向栈顶的顺序一次性恢复Fragment；
@@ -14,7 +14,7 @@
 
 ### Activity
 
-* 生命周期![image](images/454F1F33-71E9-40F8-83FB-5AA1C835E78F.png)
+* 生命周期![image](../images/454F1F33-71E9-40F8-83FB-5AA1C835E78F.png)
 
 
 ### 参考

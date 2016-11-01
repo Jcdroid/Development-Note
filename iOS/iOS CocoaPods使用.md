@@ -50,13 +50,13 @@
 
 ### 常见错误
 1. 在`swift`工程中使用`cocoapods`时，引用导入的第三方库时出现`Pod Error in Xcode “Id: framework not found Pods”`的错误？
-> 在`Project`-`Target`-`Linked Frameworks and Libraries`中删除`Pods.frameworks`，然后再点击`+`号添加第三方的`framework`，`clean`后进行`build`，如果还是不行，重启`Xcode`![image](images/FB5A5582-5D96-419D-979C-D98710D17B06.png)参考[这里](http://stackoverflow.com/questions/31139534/pod-error-in-xcode-id-framework-not-found-pods)
+> 在`Project`-`Target`-`Linked Frameworks and Libraries`中删除`Pods.frameworks`，然后再点击`+`号添加第三方的`framework`，`clean`后进行`build`，如果还是不行，重启`Xcode`![image](../images/FB5A5582-5D96-419D-979C-D98710D17B06.png)参考[这里](http://stackoverflow.com/questions/31139534/pod-error-in-xcode-id-framework-not-found-pods)
 
 2. 出现类似这样的错误`Could not find a storyboard named 'QBImagePicker' in bundle`
 > 这是由于cocoapods生成项目时出现了问题，下面是引起错误时的`Build Phase`
-> ![image](images/7BDB92FA-5467-4680-87C5-C5F5ED0963D9.png)
+> ![image](../images/7BDB92FA-5467-4680-87C5-C5F5ED0963D9.png)
 > 点击右侧`X`后，在folder中删掉cocoapods生成的文件，执行`pod install --no-repo-update`可生成新的xcworkspace项目，打开后，可看到这个是正确的状态，如下图
-> ![image](images/F2309020-3A72-4A7E-B694-0C6120109326.png)
+> ![image](../images/F2309020-3A72-4A7E-B694-0C6120109326.png)
 
 
 ###参考

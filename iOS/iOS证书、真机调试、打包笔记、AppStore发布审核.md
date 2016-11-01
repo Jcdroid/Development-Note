@@ -17,7 +17,7 @@
 3. 打包好后，执行`export`，导出包后，在`iTunes Connect`中创建好对应的版本和更新描述，然后使用`ApplicationLoader`上传`ipa`包
 
 ### 测试打包和发布打包
-* 测试打包：直接使用生成的app包打包即可，不用archive打包方式。**注意：在使用`iOS Team Provisioning Profile`描述文件生成app包时，如果添加新设备的UDID，需要先把以前的`iOS Team Provisioning Profile`描述文件删除，然后在Account - View Details - Provisioning Profiles中重新导入**，这时就可以在新设备上安装测试包了，也可以去`Certificates, Identifiers & Profiles`上查看`iOS Team Provisioning Profile`描述文件的Devices数量，如下图![image](images/64E28BAC-3916-432E-8D9A-B6CDE87CA625.png)
+* 测试打包：直接使用生成的app包打包即可，不用archive打包方式。**注意：在使用`iOS Team Provisioning Profile`描述文件生成app包时，如果添加新设备的UDID，需要先把以前的`iOS Team Provisioning Profile`描述文件删除，然后在Account - View Details - Provisioning Profiles中重新导入**，这时就可以在新设备上安装测试包了，也可以去`Certificates, Identifiers & Profiles`上查看`iOS Team Provisioning Profile`描述文件的Devices数量，如下图![image](../images/64E28BAC-3916-432E-8D9A-B6CDE87CA625.png)
 * 发布打包：使用archive方式打包
 
 ### 证书
@@ -45,7 +45,7 @@ iOS分为开发和发布证书
 
 #### ipa的4种打包方式
 XCode7开始提供四种证书选择，如下图
-![image](images/721A5BF7-0583-41A0-948F-FE430E93AB89.png)
+![image](../images/721A5BF7-0583-41A0-948F-FE430E93AB89.png)
 
 1. Save for iOS App Store Deployment
 > 该方式必须使用$99的公司账号或者个人账号。通过该账号下的Distribution描述文件关联Production证书。使用该方式打包的IPA只能用于提交AppStore或者越狱的设备安装，该选项一般很少选择，因为如果要提交App Store不需要”Export”，可以直接选择Upload to App Store…。
@@ -76,11 +76,11 @@ XCode7开始提供四种证书选择，如下图
 不受UUID的限制，但是个人和公司证书，需要提供UUID
 
 #### 企业证书重签名
-> 完整的重签名`shell`脚本，[在这里](files/anewsign.sh)
+> 完整的重签名`shell`脚本，[在这里](../files/anewsign.sh)
 > 
 > 1. 需要把里面的`<name>`和`new name`改为你需要重签名的`ipa`名字和重签名后的`ipa`名字；
 > 2. 把重签名需要用的描述文件更名为`embedded.mobileprovision`；
-> 3. 还需要下载[entitlements.plist](files/entitlements.plist)并修改其中的`pplication-identifier`、`keychain-access-groups`
+> 3. 还需要下载[entitlements.plist](../files/entitlements.plist)并修改其中的`pplication-identifier`、`keychain-access-groups`
 > 4. 最后把`anewsign.sh`、`ipa`、`mobileprovision`、`entitlements.plist`放在一个目录下执行`anewsign.sh`就可以自动生成重签名的`ipa`。
 
 1. 解压：`unzip <name>.ipa`
@@ -117,12 +117,12 @@ XCode7开始提供四种证书选择，如下图
 3. 提交**应用介绍文字**、**价格与销售范围**(一般应用价格为0，销售范围：所有地区，批量购买计划：没有折扣，Bitcode 自动重新编译：勾选请勿使用Bitcode自动重新编译）
 4. `Xcode`打包`ipa`，在`Organizer`上传`ipa`到`AppStore`，或者使用`ApplicationLoader`来上传ipa。**在上传之前，并不需要先在`iTunes Connect`中创建对应版本的APP，不创建也是可以上传ipa的，这样就可以节省ipa上传完的等待`Build`版本6~8分钟的时间了**
 5. 二进制`ipa`文件上传完成后，需要等待6~8分钟左右时间，才会在`iTunnes Connect`的`构建版本`处可供选择，此时选中一个`ipa`后即可点击`提交以供审核`，进入下图所示，如没进行`加密`和`广告`，则都选择`否`，然后点击提交后等待苹果的审核。
-![image](images/58190C81-B3F8-46E7-9320-AED561AF9268.png)
+![image](../images/58190C81-B3F8-46E7-9320-AED561AF9268.png)
 6. 新应用上架审核时间大概7天，应用版本更新审核时间大概3天。
-7. 审核通过后，需要手动发布，如图所示![image](images/3262E37E-1DD5-4C5A-AAA5-5652ABB075D5.png)
+7. 审核通过后，需要手动发布，如图所示![image](../images/3262E37E-1DD5-4C5A-AAA5-5652ABB075D5.png)
 
 #### ApplicationLoader
-使用ApplicationLoader上传时，如果你的苹果账号没有上传APP的bundle id，则会出现下面的错误![image](images/B28E8529-6F7C-4949-A1DC-E1A2193065A2.png)
+使用ApplicationLoader上传时，如果你的苹果账号没有上传APP的bundle id，则会出现下面的错误![image](../images/B28E8529-6F7C-4949-A1DC-E1A2193065A2.png)
 
 
 ### 提交审核加急
@@ -131,8 +131,10 @@ XCode7开始提供四种证书选择，如下图
 ### AppStore发布审核
 1. 遇到元数据被拒绝，要不要提交以供审核？ 
 > 只要回复`Apple`发过来的邮件中的问题就行，不需要点击提交以供审核，大概需要等待2天。我大概等待2天不到。期间`iTunes Connect`中一直显示着元数据被拒的小红点，不要急，等待几天就行了。
-2. 遇到二进制文件被拒绝，要不要提交以供审核？如图![image](images/A9165F1F-8883-4756-98DB-95437276E153.png)
-> 和第一个问题一样，只要回复`Apple`发过来的邮件中的问题就行，不需要点击提交以供审核，这次在一天之内就审核通过了。![image](images/F9DDC67A-65AC-436A-8531-A17A78EF7D73.png)
+2. 遇到二进制文件被拒绝，要不要提交以供审核？如图![image](../images/A9165F1F-8883-4756-98DB-95437276E153.png)
+> 和第一个问题一样，只要回复`Apple`发过来的邮件中的问题就行，不需要点击提交以供审核，这次在一天之内就审核通过了。![image](../images/F9DDC67A-65AC-436A-8531-A17A78EF7D73.png)
+3. 点击发布后，iTunes中APP状态为“可供销售”，但是在AppStore搜索不到
+> 请先等待10分钟~24小时不等，24小时后还搜索不到，可以去邮件联系苹果。
 
 ### 审核被拒常用英文
 * 需要重新打包上传时：I see. This issue is my code error and I will upload a new binary to correct this issue.
@@ -156,7 +158,7 @@ Please re-review, thank you.
 4. Code Sign error: No matching provisioning profile found: Your build settings specify a provisioning profile with the UUID “xxx”, however, no such provisioning profile was found.
 > **重启Xcode**，同问题2
 
-5. Cannot generate iOS App archive in xcode？如图![image](images/589133-20150923001549725-1418444358.png)
+5. Cannot generate iOS App archive in xcode？如图![image](../images/589133-20150923001549725-1418444358.png)
 > 见[这里](http://stackoverflow.com/questions/10715211/cannot-generate-ios-app-archive-in-xcode)
 > 
 > Check Build Settings:
@@ -168,10 +170,10 @@ Please re-review, thank you.
 > 
 > **most importantly: in each library your project uses go to build phases -> Copy Files and ensured that destination is changed from Absolute path to products directory. Note: see the hint below to narrow your search to find the library causing this error.**（最后是靠这个方法解决的，详细见[这里](http://stackoverflow.com/questions/10715211/cannot-generate-ios-app-archive-in-xcode#15120144)）
 
-6. 上传ipa到AppStore出错，具体错误：Unexpected CFBundleExecutable Key. The bundle at 'Payload/xxx.app/EaseUIResource.bundle' does not contain a bundle executable. If this bundle intentionally does not contain an executable, consider removing the CFBundleExecutable key from its Info.plist and using a CFBundlePackageType of BNDL. If this bundle is part of a third-party framework, consider contacting the developer of the framework for an update to address this issue，如图![image](images/CDE70E54-F5EA-44D3-9E59-C08AB65B5C7C.png)
+6. 上传ipa到AppStore出错，具体错误：Unexpected CFBundleExecutable Key. The bundle at 'Payload/xxx.app/EaseUIResource.bundle' does not contain a bundle executable. If this bundle intentionally does not contain an executable, consider removing the CFBundleExecutable key from its Info.plist and using a CFBundlePackageType of BNDL. If this bundle is part of a third-party framework, consider contacting the developer of the framework for an update to address this issue，如图![image](../images/CDE70E54-F5EA-44D3-9E59-C08AB65B5C7C.png)
 > 全局搜索info.plist，删除掉CFBundleExecutable对应的key和value，一定要把相关info.plist的CFBundleExecutable对应的key和value都删除掉，都则还是会报上面的错误。可参考[这里](http://stackoverflow.com/questions/32096130/unexpected-cfbundleexecutable-key#32502927)
 
-7. 运行项目时出现下面的错误，如图![image](images/0E78EB6C-22C6-464F-B506-F6329934A14D.png)
+7. 运行项目时出现下面的错误，如图![image](../images/0E78EB6C-22C6-464F-B506-F6329934A14D.png)
 > 卸载已安装的APP，重新运行项目即可
 
 8. Xcode8打包APP上传到iTunes后，不出现在构建版本中
@@ -184,4 +186,5 @@ Please re-review, thank you.
 * [App Store审核总结](http://www.devlizy.com/appstoreshen-he-zong-jie/)
 * [IPA的4种打包方式](http://blog.csdn.net/joneos/article/details/49431885)
 * [Xcode 7.2 no matching provisioning profiles found](http://stackoverflow.com/questions/34346436/xcode-7-2-no-matching-provisioning-profiles-found)
-* [ iOS-Xcode上传后iTunes Connect构建版本不显示](http://blog.csdn.net/qxuewei/article/details/52790357) 
+* [iOS-Xcode上传后iTunes Connect构建版本不显示](http://blog.csdn.net/qxuewei/article/details/52790357) 
+* [AppStore - App status is ready for sale, but not in app store](http://stackoverflow.com/questions/24403098/appstore-app-status-is-ready-for-sale-but-not-in-app-store)
