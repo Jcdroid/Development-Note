@@ -16,6 +16,19 @@
 
 * 生命周期![image](../images/454F1F33-71E9-40F8-83FB-5AA1C835E78F.png)
 
+### startActivityForResult的使用
+> `Activity`的`startActivityForResult`和`Fragment`的`startActivityForResult`是有区别，在`Fragment`中可以通过调用`getActivity`得到`Activity`后再执行`Activity`的`startActivityForResult`方法，即可在`Fragment`对应的容器`Activity`的`onActivityResult`中接受传回来的数据。
+
+假设有一个FragmentActivity中嵌套一个Fragment，它们各自使用startActivityForResult发起数据请求。 
+经测，目标所返回结果数据，能否被它们各自的onActivityResult方法所接收的情况如下：
+![image](../images/241DC674-7F36-45E2-8878-97A89763CC65.png)
+
+* `Fragment`和`FragmentActivity`都能接收到自己的发起的请求所返回的结果
+* `FragmentActivity`发起的请求，`Fragment`完全接收不到结果
+* `Fragment`发起的请求，虽然在`FragmentActivity`中能获取到结果，但是`requestCode`完全对应不上
+* 使用`startActivityForResult`的时候，`requestCode`一定不要大于0xffff(65535)。
+* 如果希望在`Fragment`的`onActivityResult`接收数据，就要调用`Fragment.startActivityForResult`，而不是`Fragment.getActivity().startActivityForResult`。
+
 
 ### 参考
 * [Android Fragment 真正的完全解析（上）](http://blog.csdn.net/lmj623565791/article/details/37970961)
@@ -26,3 +39,4 @@
 * [我为什么主张反对使用Android Fragment](https://asce1885.gitbooks.io/android-rd-senior-advanced/content/wo_wei_shi_yao_zhu_zhang_fan_dui_shi_yong_android_fragment.html)
 * [Android Fragment使用(一) 基础篇 温故知新](http://mengdd.github.io/Android/2016/05/31/android-fragment-usage-1-basic-part/)
 * [Android Fragment使用(二) 嵌套Fragments (Nested Fragments) 的使用及常见错误](http://mengdd.github.io/Android/2016/06/02/android-fragment-usage-2-nested-fragments/)
+* [彻底搞懂startActivityForResult在FragmentActivity和Fragment中的异同](http://blog.csdn.net/barryhappy/article/details/53229238)

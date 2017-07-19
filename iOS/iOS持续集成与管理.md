@@ -13,8 +13,11 @@
 1. 安装`sudo gem install snapshot`，先确定已安装了`xcode-select`（如没有安装先执行`xcode-select --install`）
 2. 在工程目录中执行`snapshot init`
 
+### altool自动上传iTunes Connect
+
 ### 参考
 * [iOS项目的持续集成与管理](http://www.devtf.cn/?p=537)
+* [使用GitLab来实现IOS项目的持续集成CI](http://blog.csdn.net/ejunnet/article/details/52127019)
 * [构建iOS持续集成平台（一）——自动化构建和依赖管理](http://www.infoq.com/cn/articles/build-ios-continuous-integration-platform-part1)
 * [构建iOS持续集成平台（二）——测试框架](http://www.infoq.com/cn/articles/build-ios-continuous-integration-platform-part2)
 * [构建iOS持续集成平台（三）——CI服务器与自动化部署](http://www.infoq.com/cn/articles/build-ios-continuous-integration-platform-part3)

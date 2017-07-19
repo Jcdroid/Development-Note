@@ -30,6 +30,8 @@
 
 ### 参考
 * [awesome-android-tips](https://github.com/jiang111/awesome-android-tips)
+* [AndroidTips](https://github.com/JohnTsaiAndroid/AndroidTips)
 * [Android开发时你遇到过什么相见恨晚的工具或网站？](https://www.zhihu.com/question/27140400)
 * [Android开发中，有哪些让你觉得相见恨晚的方法、类或接口？](http://www.zhihu.com/question/33636939)
 * [LayoutInflater.inflate方法解析](http://bxbxbai.github.io/2014/11/19/make-sense-of-layoutinflater/)
+* [Android Studio 小技巧/快捷键 合集](http://jaeger.itscoder.com/android/2016/02/14/android-studio-tips.html)

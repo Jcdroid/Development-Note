@@ -4,3 +4,4 @@
 * [iOS程序性能优化](http://www.samirchen.com/ios-performance-optimization/)
 * [iOS 保持界面流畅的技巧](http://blog.ibireme.com/2015/11/12/smooth_user_interfaces_for_ios/)
 * [UITableview Tip](https://github.com/vedon/iOS-tech/blob/master/UITableViewOpt/UITableView_Opt.md)
+* [25条关于提高app性能的技巧](http://www.jianshu.com/p/cc59130e07e5)

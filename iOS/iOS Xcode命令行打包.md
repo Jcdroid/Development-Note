@@ -36,10 +36,17 @@
 
 [完整的脚本](../files/autoarchive.sh)
 
+### 使用工作流打包+上传到iTunes
+见[xcode-archive-release.sh](../files/xcode-archive-release.sh)、[release_exportOptions.plist](../files/release_exportOptions.plist)和[发布至AppStore.workflow](../files/发布至AppStore.workflow)。详情见[Xcode一键发布到AppStore](http://blog.csdn.net/gukong/article/details/51578618)
+
+#### 使用altool上传到iTunes
+[altool](http://help.apple.com/itc/apploader/#/apdATD1E53-D1E1A1303-D1E53A1126)
+
 ### 持续集成与管理
 见[这里](iOS持续集成与管理.md)
 
 ### 参考
+* [Xcode一键发布到AppStore](http://blog.csdn.net/gukong/article/details/51578618)
 * [iOS自动打包并发布脚本](http://liumh.com/2015/11/25/ios-auto-archive-ipa/)
 * 在shell中使用`xcodebuild+xcrun`可以打包出ipa，具体的[参考实例](https://github.com/webfrogs/xcode_shell) 
 * [xctool](https://github.com/facebook/xctool)

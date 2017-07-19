@@ -58,6 +58,8 @@
 > 点击右侧`X`后，在folder中删掉cocoapods生成的文件，执行`pod install --no-repo-update`可生成新的xcworkspace项目，打开后，可看到这个是正确的状态，如下图
 > ![image](../images/F2309020-3A72-4A7E-B694-0C6120109326.png)
 
+3. 安装Cocoapods 报错ERROR: While executing gem ... (Errno::EPERM) Operation not permitted - /usr/bin/fuzzy
+> 使用`sudo gem install -n /usr/local/bin cocoapods`安装
 
 ###参考
 * [使用Cocoapods创建私有podspec](http://blog.wtlucky.com/blog/2015/02/26/create-private-podspec/)

@@ -137,7 +137,7 @@ XCode7开始提供四种证书选择，如下图
 > 请先等待10分钟~24小时不等，24小时后还搜索不到，可以去邮件联系苹果。
 
 ### 审核被拒常用英文
-* 需要重新打包上传时：I see. This issue is my code error and I will upload a new binary to correct this issue.
+* 需要重新打包上传时：I see. This issue is my code error and I will upload a new binary to fix this issue.
 * 数据上的错误引起crash，不需要重新打包时：I see. This issue is caused by our server to return data errors, has now been repaired.
 Please re-review, thank you.
 
@@ -171,13 +171,21 @@ Please re-review, thank you.
 > **most importantly: in each library your project uses go to build phases -> Copy Files and ensured that destination is changed from Absolute path to products directory. Note: see the hint below to narrow your search to find the library causing this error.**（最后是靠这个方法解决的，详细见[这里](http://stackoverflow.com/questions/10715211/cannot-generate-ios-app-archive-in-xcode#15120144)）
 
 6. 上传ipa到AppStore出错，具体错误：Unexpected CFBundleExecutable Key. The bundle at 'Payload/xxx.app/EaseUIResource.bundle' does not contain a bundle executable. If this bundle intentionally does not contain an executable, consider removing the CFBundleExecutable key from its Info.plist and using a CFBundlePackageType of BNDL. If this bundle is part of a third-party framework, consider contacting the developer of the framework for an update to address this issue，如图![image](../images/CDE70E54-F5EA-44D3-9E59-C08AB65B5C7C.png)
-> 全局搜索info.plist，删除掉CFBundleExecutable对应的key和value，一定要把相关info.plist的CFBundleExecutable对应的key和value都删除掉，都则还是会报上面的错误。可参考[这里](http://stackoverflow.com/questions/32096130/unexpected-cfbundleexecutable-key#32502927)
+> 全局搜索info.plist，删除掉CFBundleExecutable对应的key和value，一定要把相关info.plist的CFBundleExecutable对应的key和value都删除掉，否则还是会报上面的错误。可参考[这里](http://stackoverflow.com/questions/32096130/unexpected-cfbundleexecutable-key#32502927)
 
-7. 运行项目时出现下面的错误，如图![image](../images/0E78EB6C-22C6-464F-B506-F6329934A14D.png)
+7. 上传ipa到AppStore出错，具体错误：![image](../images/2E0C12F6-63DC-4C1A-B8C8-6D5FB8FCB62C.png)
+> 已经上传过了同一ipa到iTunes了。
+
+8. 运行项目时出现下面的错误，如图![image](../images/0E78EB6C-22C6-464F-B506-F6329934A14D.png)
 > 卸载已安装的APP，重新运行项目即可
 
-8. Xcode8打包APP上传到iTunes后，不出现在构建版本中
+9. Xcode8打包APP上传到iTunes后，不出现在构建版本中
 > 因为iOS10以后Apple更注重保护用户权限,在任何需要使用设备权限的地方都需要提前声明，如加上对应的相机和相册权限声明。见[这里](http://blog.csdn.net/qxuewei/article/details/52790357)
+
+10. 真机运行出现，`This application's application-identifier entitlement does not match that of the installed application. These values must match for an upgrade to be allowed.`，具体如下图：![image](../images/BA5D1BDC-41D2-4F01-8013-78DBE4D68A72.png)
+> 由于这台真机上安装了另一个描述文件编译的同一个ipa，卸载再安装即可
+
+11. 打包ipa时，需要特别注意，**最后导出时不要勾选下图的选项**，这样会增大ipa包大小，而且它们还需要一些额外的权限，如相册权限![image](../images/B82FCB8C-D84C-4A0A-81A3-8BCABD125C3A.png)
 
 ### 参考
 * [iOS 开发流程笔记](https://github.com/leecade/ios-dev-flow)
