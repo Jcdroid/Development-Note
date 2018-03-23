@@ -16,6 +16,8 @@ gradle2.2以上，推荐使用Google提供的annotationProcessor，而不是apt�
 7. `@Scope`：这个注解使Dagger持有Component中提供的对象的一个实例，这个实例随component有一定的生命周期，Provider 方法如果没有使用@Scope注解，它提供的对象在每次使用@Inject注入使用时都会新建一个新的对象。@Singleton是一个被Dagger定义的特殊的Scope，我们也可以定义自己的Scope。另外，一旦同时使用自己定义的@Scope与@Singleton，那后者将会失效。
 
 ### 参考
+* [Dagger2从入门到放弃再到恍然大悟](https://www.jianshu.com/p/39d1df6c877d)
+* [Java注解Annotation基础](http://www.open-open.com/lib/view/open1423558996951.html)
 * [Dagger2官网](https://google.github.io/dagger/)
 * [[译] 详解 Dagger 2（Android）](http://www.liuhaihua.cn/archives/70662.html)
 * [Dagger on Android－Dagger2详解](http://blog.fidroid.com/post/android/dagger-on-android-dagger2xiang-jie)

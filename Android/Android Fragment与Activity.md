@@ -31,6 +31,7 @@
 
 
 ### 参考
+* [Android基础：Fragment，看这篇就够了](http://mp.weixin.qq.com/s?__biz=MzA3NTYzODYzMg==&mid=2653579375&idx=1&sn=4f80a50961329e19cad6cd0e1bff20d9&chksm=84b3ba68b3c4337e28a870d6338fa3035d299a2aff2f3bf3f82304417aa7a83deab0b95031e6&mpshare=1&scene=1&srcid=1020fFlFKaeePzTtslVVpOj8#rd)
 * [Android Fragment 真正的完全解析（上）](http://blog.csdn.net/lmj623565791/article/details/37970961)
 * [Fragment全解析系列（一）：那些年踩过的坑](http://www.jianshu.com/p/d9143a92ad94)
 * [Fragment学习](https://lijunjieone.gitbooks.io/android/content/fragmentxue_xi.html)

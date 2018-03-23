@@ -24,9 +24,10 @@
 * Linkify.addLinks() 这个类可以更方便的为文本添加超链接。 
 * Context的使用限制![image](../images/787C2710-5076-40BA-9ECD-52A734D6EF36.png)
 * LayoutInflater.inflate 
-> 1. 调用LayoutInflater.inflate方法，并且将root参数设置为null，就等于忽略了xml布局文件中的layout_×参数
-> 2. 如果root不为null，并且attachRoot=true，那么就会根据root生成一个布局文件View的LayoutParam对象，并且将这个View添加到root中去，并且返回这个root的View
-> 3. 因此，最好还是使用这个代码吧：View v1 = LayoutInflater.from(this).inflate(R.layout.layout_menu_item, layout, false);
+
+	> 1. 调用LayoutInflater.inflate方法，并且将root参数设置为null，就等于忽略了xml布局文件中的layout_×参数
+	> 2. 如果root不为null，并且attachRoot=true，那么就会根据root生成一个布局文件View的LayoutParam对象，并且将这个View添加到root中去，并且返回这个root的View
+	> 3. 因此，最好还是使用这个代码吧：View v1 = LayoutInflater.from(this).inflate(R.layout.layout_menu_item, layout, false);
 
 ### 参考
 * [awesome-android-tips](https://github.com/jiang111/awesome-android-tips)

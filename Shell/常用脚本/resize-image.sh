@@ -1,3 +1,9 @@
+cp 1024x1024.png 29x29@2x.png
+cp 1024x1024.png 29x29@3x.png
+cp 1024x1024.png 40x40@2x.png
+cp 1024x1024.png 40x40@3x.png
+cp 1024x1024.png 60x60@2x.png
+cp 1024x1024.png 60x60@3x.png
 sips -Z 58 29x29@2x.png
 sips -Z 87 29x29@3x.png
 sips -Z 80 40x40@2x.png
