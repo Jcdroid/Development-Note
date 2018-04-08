@@ -11,6 +11,8 @@
 
 `gradle build`  # 检查依赖并编译打包
 
+`gradle build ----stacktrace`  # 检查依赖并编译打包，打印出编译信息和错误信息
+
 `gradle clean`  # 清除build目录
 
 `gradle assemble`  # 编译并打包apk或aar
@@ -29,6 +31,12 @@
 
 
 ### Build Variants的使用
+
+### 注意
+* 如果在Mac系统中运行`./gradlew`出现`gradlew: Permission Denied`的问题，请执行`chmod +x gradlew`
+
+* 当出现`Exception is:
+org.gradle.api.GradleScriptException: A problem occurred evaluating root project`错误时，请检查`gradle/wrapper/gradle-wrapper.properties`中的gradle版本是否在在本机安装
 
 
 ### 参考

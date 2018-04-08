@@ -1,4 +1,4 @@
-# Android 打包和签名
+# Android应用签名
 
 ### 查看keystore签名
 `keytool -list -v -keystore <keystore name or jks name> -storepass <password>`
