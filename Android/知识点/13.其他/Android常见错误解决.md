@@ -30,3 +30,7 @@
 2. java.lang.UnsatisfiedLinkError: dlopen failed: "/data/app-lib/com.mzy.remay_test-1/libentryexpro.so" is too small to be an ELF executable
 > 这个问题是由于so文件大小不正确引起的，在文件管理中查看.so文件所占的大小，如果为0字节，说明copy的时候不正确，具体请看[这里](http://bugly.qq.com/bbs/forum.php?mod=viewthread&tid=1000)
 
+
+
+### 参考
+* [安卓开发中遇到的奇奇怪怪的问题（二）](https://blog.csdn.net/qq_17766199/article/details/79941199)

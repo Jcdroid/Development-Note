@@ -36,3 +36,4 @@
 * [Android开发中，有哪些让你觉得相见恨晚的方法、类或接口？](http://www.zhihu.com/question/33636939)
 * [LayoutInflater.inflate方法解析](http://bxbxbai.github.io/2014/11/19/make-sense-of-layoutinflater/)
 * [Android Studio 小技巧/快捷键 合集](http://jaeger.itscoder.com/android/2016/02/14/android-studio-tips.html)
+* [Android 系统中，那些能大幅提高工作效率的 API 汇总（持续更新中...）](https://juejin.im/post/58c407ee44d90400698757d8)

@@ -6,10 +6,11 @@
 
 ###### 动画
 * [lottie-android](https://github.com/airbnb/lottie-android)
+* [Lottie-editor](https://github.com/sonaye/lottie-editor) 可以编辑Lottie文件
 
 ###### 权限
 * [RxPermissions](https://github.com/tbruyelle/RxPermissions)
-* [permissionsdispatcher](https://github.com/permissions-dispatcher/PermissionsDispatcher)
+* [permissionsdispatcher](https://github.com/permissions-dispatcher/PermissionsDispatcher) 可以配合AS插件使用
 
 ###### 图片裁剪
 * [android-crop](https://github.com/jdamcd/android-crop)
@@ -26,11 +27,19 @@
 ###### 图标
 * [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)
 
+###### 底部导航栏
+[BottomNavigation](https://github.com/Ashok-Varma/BottomNavigation)
+
+###### 基类
+* [Fragmentation](https://github.com/YoKeyword/Fragmentation) 更方便的管理Fragment
+
 ###### 工具
 * [AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode)
+* [RxTools](https://github.com/vondear/RxTools)
 * [Lazy](https://github.com/l123456789jy/Lazy)
 * [android-common](https://github.com/Trinea/android-common)
 * [android-common](https://github.com/litesuits/android-common)
+* [Android 系统中，那些能大幅提高工作效率的 API 汇总（持续更新中...）](https://juejin.im/post/58c407ee44d90400698757d8)
 
 ### 项目
 * [CloudReader](https://github.com/youlookwhat/CloudReader)
@@ -60,11 +69,13 @@
 * [MVPArms](https://github.com/JessYanCoding/MVPArms)
 
 ### 参考
+* [Android 流行框架查速表](http://www.ctolib.com/cheatsheets-Android-ch.html)
+* [codekk](http://p.codekk.com/)
 * [Android开发人员不得不收集的代码(持续更新中)](http://www.jianshu.com/p/72494773aace)
 * [TimLiu-Android](https://github.com/Tim9Liu9/TimLiu-Android)
 * [android-open-project](https://github.com/Trinea/android-open-project)
 * [有哪些优秀的Android 应用开源项目、特效、设计资料推荐？](https://www.zhihu.com/question/19804692)
-* [codekk](http://p.codekk.com/)
+* [Android 开源项目分类汇总](https://github.com/Trinea/android-open-project)
 * [Android-Tips](https://github.com/tangqi92/Android-Tips)
 * [[源码] Android 不要错过的7个完整项目学习](http://mp.weixin.qq.com/s/xJtFkhEzKJGoOFQoSzqL5Q)
-* [安卓UI相关开源项目库汇总](https://github.com/opendigg/awesome-github-android-ui))
+* [安卓UI相关开源项目库汇总](https://github.com/opendigg/awesome-github-android-ui)

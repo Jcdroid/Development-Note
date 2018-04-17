@@ -1,4 +1,4 @@
-# iOS适配相关
+# iOS屏幕适配
 
 ###  Points, Rendered Pixels, Physical Pixels, Physical Device
 * Points: 是iOS开发中引入的抽象单位，称作点。开发过程中所有基于坐标系的绘制都是以 point 作为单位，在iPhone 2G,3G,3GS的年代，point 和屏幕上的像素是完全一一对应的，即 320 480 (points), 也是 320 480 (pixels)
