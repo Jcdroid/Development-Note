@@ -1,6 +1,4 @@
-iOS标记过时、警告、Mark、TODO等常用警告
-
-过时
+# iOS标记过时、警告、Mark、TODO等常用警告
 
 ### 过时
 1. `DEPRECATED_ATTRIBUTE`

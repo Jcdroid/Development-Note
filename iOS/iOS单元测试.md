@@ -66,7 +66,7 @@ xxx-iOSTest` - `General` - `Testing` - `Host Application`，下拉选项选中�
 ![image](../images/51B015C7-1896-47E8-B6F9-C22892932B27.png)
 
 ###参考
-* [objccn测试](http://objccn.io/issue-15/)* 
+* [objccn测试](http://objccn.io/issue-15/)
 * [OCMock](http://ocmock.org/)
 * [OCMock基本使用](http://iosapp.me/blog/2014/06/09/ocmock/)
 * [OCMock常见使用方式](http://zixun.github.io/blog/2015/04/16/iosdan-yuan-ce-shi-xi-lie-yi-ocmockchang-jian-shi-yong-fang-shi/)

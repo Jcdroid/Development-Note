@@ -1,0 +1,17 @@
+[user]
+	name = caojing
+	email = 438339197@qq.com
+[alias]
+	st = status
+	cm = commit
+	co = checkout
+	br = branch
+	logpre = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	stash-unapply = !git stash show -p | git apply -R
+[core]
+	quotepath = false
+	autocrlf = input
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
