@@ -1,5 +1,13 @@
 # Android知识点
 
+### 资料
+* [LearningNotes](https://github.com/francistao/LearningNotes)
+* [android-open-source-project-analysis](https://github.com/guoxiaoxing/android-open-source-project-analysis)
+* [BeesAndroid](https://github.com/BeesAndroid/BeesAndroid)
+* [hencoder](http://hencoder.com/)
+* [codekk](http://a.codekk.com/)
+* [Android面试专栏](https://zhuanlan.zhihu.com/androidinterview)
+
 ### 基础知识
 * Java基础
 * 数据结构
@@ -52,7 +60,7 @@
 * Camera
 * 感应器
 
-![](../images/Android开发知识体系.jpg)
+![](../../images/Android开发知识体系.jpg)
 
 
 ### 参考
