@@ -2,11 +2,17 @@
 
 ### 资料
 * [LearningNotes](https://github.com/francistao/LearningNotes)
+* [android-interview-questions-cn](https://github.com/stormzhang/android-interview-questions-cn)
+* [interview](https://github.com/hadyang/interview)
+* [android-interview-questions](https://github.com/MindorksOpenSource/android-interview-questions)
+* [AndroidNote](https://github.com/linsir6/AndroidNote)
+* [Android-Advance](https://github.com/linsir6/Android-Advance)
 * [android-open-source-project-analysis](https://github.com/guoxiaoxing/android-open-source-project-analysis)
 * [BeesAndroid](https://github.com/BeesAndroid/BeesAndroid)
 * [hencoder](http://hencoder.com/)
 * [codekk](http://a.codekk.com/)
 * [Android面试专栏](https://zhuanlan.zhihu.com/androidinterview)
+* [Android_Data](https://github.com/Freelander/Android_Data)
 
 ### 基础知识
 * Java基础
@@ -61,7 +67,3 @@
 * 感应器
 
 ![](../../images/Android开发知识体系.jpg)
-
-
-### 参考
-* [LearningNotes](https://github.com/francistao/LearningNotes)
