@@ -13,6 +13,7 @@
 * [codekk](http://a.codekk.com/)
 * [Android面试专栏](https://zhuanlan.zhihu.com/androidinterview)
 * [Android_Data](https://github.com/Freelander/Android_Data)
+* [CommonDevKnowledge](https://github.com/AweiLoveAndroid/CommonDevKnowledge)
 
 ### 基础知识
 * Java基础
