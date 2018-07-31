@@ -1,0 +1,6 @@
+# String、StringBuilder以及StringBuffer
+
+* Java中的字符串存储在字符串常量区，不会改变，发生改变是会新创建一个对象
+* StringBuffer是线程安全的
+* StringBuilder跟StringBuffer功能相同，区别是StringBuilder不是线程安全的
+* StringBuilder和StringBuffer底层都是以字符数组存放的，可以修改内容
