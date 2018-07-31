@@ -90,5 +90,15 @@ java中有三种移位运算符
 * 2个保留关键字（现在没用以后可能用到作为关键字）：goto、const。
 * 3个特殊显式常量：true、false、null。
 
+#### StringBuffer容量和长度的关系
+
+	StringBuffer s = new StringBuffer(x);  x为初始化容量长度
+	s.append("Y"); "Y"表示长度为y的字符串
+	length始终返回当前长度即y；
+	对于s.capacity()：
+	1.当y<x时，值为x
+	以下情况，容器容量需要扩展
+	2.当x<y<2*x+2时，值为 2*x+2
+	3.当y>2*x+2时，值为y
 
 
