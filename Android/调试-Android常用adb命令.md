@@ -1,6 +1,7 @@
 # Android常用adb命令
 * `adb devices`：查看已连接的设备
-
+* `adb kill-server`：终止服务
+* `adb start-server`：开启服务
 * `adb install -r <name>.apk`：安装应用
 * `adb shell am start PACKAGE_NAME/ACTIVITY_IN_PACKAGE`：启动Activity，如`adb shell am start -n com.jcdroid.io/.MainActivity`
 * `adb connect [ip]`：连接指定ip（局域网内）的设备
