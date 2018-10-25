@@ -34,6 +34,15 @@
 
 具体使用可以查看[官方文档](https://developer.android.com/studio/build/build-variants?hl=zh-cn)
 
+
+### 源集
+* `src/main/`此源集包括所有构建变体共用的代码和资源。
+* `src/<buildType>/`创建此源集可加入特定构建类型专用的代码和资源。
+* `src/<productFlavor>/`创建此源集可加入特定产品风味专用的代码和资源。
+* `src/<productFlavorBuildType>/`创建此源集可加入特定构建变体专用的代码和资源。
+
+    如果不同源集包含同一文件的不同版本，Gradle 将按以下优先顺序决定使用哪一个文件（左侧源集替换右侧源集的文件和设置）：`构建变体 > 构建类型 > 产品风味 > 主源集 > 库依赖项`
+
 ### 新版本的更新
 
 `Gradle 3.4` 引入了新的依赖配置，新增了 `api` 和 `implementation` 来代替 `compile` 依赖配置。其中 `api` 和以前的 `compile` 依赖配置是一样的。使用 `implementation` 依赖配置，会显著提升构建时间。
