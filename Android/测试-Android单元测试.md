@@ -1,22 +1,20 @@
 # Android单元测试
 
-* 常见错误
-  
-* 参考
-  
-  ``` 
-  一直以来都没有好好整理过单元测试相关的内容
-  ```
-  
-  ### Robolectric
-  
-  ​
+``` 
+一直以来都没有好好整理过单元测试相关的内容
+```
 
-
+### 常用测试框架
+* JUnit
+* Mockito
+* Robolectric
+* Espresso
+* Runner
+* Rules
 
 ### 常见错误
 
-1. **working directory 设置为$MODULE_DIR$**
+* **working directory 设置为$MODULE_DIR$**
 
 如果在测试过程遇见如下问题：
 
@@ -37,9 +35,7 @@ Edit Configurations -> Defaults -> JUnit，working directory改为`$MODULE_DIR$`
 
 Go the your JUnit configuration, Run > Edit Configurations. Notice the 'Working Directory' textbox. Append `/app` (for OSX and Linux) or `\app` (Windows), to the path written in the textbox. Try running again and it should work. ([Robolectric says “AndroidManifest.xml not found”](http://stackoverflow.com/questions/30913522/robolectric-says-androidmanifest-xml-not-found))
 
-​
-
 ### 参考
-
-1. [Android单元测试框架Robolectric3.0介绍](http://www.jianshu.com/p/9d988a2f8ff7)
-2. [Android单元测试研究与实践](http://tech.meituan.com/Android_unit_test.html)
+* [Android单元测试框架Robolectric3.0介绍](http://www.jianshu.com/p/9d988a2f8ff7)
+* [Android单元测试研究与实践](http://tech.meituan.com/Android_unit_test.html)
+* [在 Android Studio 中进行单元测试和 UI 测试](https://www.jianshu.com/p/03118c11c199)

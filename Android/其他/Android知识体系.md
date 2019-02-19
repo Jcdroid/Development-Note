@@ -2,7 +2,8 @@
 
 ### 计算机基础
 
-###计算机网络
+* 计算机网络
+
 * 网络分层
 * IP地址
 * 子网掩码及网络划分
@@ -82,7 +83,7 @@
 * 重构，改善既有代码的设计
 
 ### 其他
-![](../images/Android开发人员技能树.jpg)
+![](../../images/Android开发人员技能树.jpg)
 
 ### 参考
 * [知识体系](https://jsonchao.github.io/knowledgehierarchy/)

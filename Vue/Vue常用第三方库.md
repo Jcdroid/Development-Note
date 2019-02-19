@@ -6,6 +6,7 @@
 * [framework7](http://vue.framework7.cn/)
 * [vux](https://vux.li/#/)
 * [Muse-UI](http://www.muse-ui.org/#/iconButton)
+* [mpvue](http://mpvue.com/) 使用vue编写小程序
 
 ### 参考
 * [awesome-vue](https://github.com/vuejs/awesome-vue)

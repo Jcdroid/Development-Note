@@ -1,4 +1,7 @@
+# Android基础及面试相关
+
 ### 技巧
+
 * [80% 以上简历都是不合格的](https://mp.weixin.qq.com/s?__biz=MzAxNjI3MDkzOQ==&mid=405319124&idx=1&sn=1451f3e9ce9787b3576088c10bc9eac1#rd)
 * [为跳槽的你献计献策（Android）](https://blankj.com/2017/02/16/find-job/#more)
 
@@ -13,6 +16,7 @@
 ### 遇到问题
 * 网络Retrofit的封装以及关闭activity时根据生命周期对网络请求进行取消
 * scheme定义h5、rn、native的不同响应和跳转
+* 经常遇到重复上传apk到fir的操作，并且通知不及时，最后写了一个python脚本自动上传apk到fir.im，并且用钉钉的webhook自动通知测试人员apk的更新状态
 
 ### 参考
 * [AndroidInterview-Q-A](https://github.com/JackyAndroid/AndroidInterview-Q-A)
@@ -20,6 +24,7 @@
 * [Interview-Notebook](https://github.com/CyC2018/Interview-Notebook)
 * [android-interview](https://github.com/guoxiaoxing/android-interview)
 * [LearningNotes](https://github.com/francistao/LearningNotes)
+* [YCBlogs](https://github.com/yangchong211/YCBlogs)
 * [BeesAndroid](https://github.com/BeesAndroid/BeesAndroid)
 * [Android_Data](https://github.com/Freelander/Android_Data)
 * [CommonDevKnowledge](https://github.com/AweiLoveAndroid/CommonDevKnowledge)
@@ -34,3 +39,4 @@
 * [计算机网络基础 总结攻略](https://juejin.im/post/5ad7e6c35188252ebd06acfa?)
 * [面试时，问哪些问题能试出一个 Android 应用开发者真正的水平？](https://www.zhihu.com/question/19765032)
 * [玩安卓](http://www.wanandroid.com/)
+* [**给扔物线 HenCoder Plus 学员的一次分享文字版（包含面试简历信息）**](https://juejin.im/post/5bf212a46fb9a049de6cf57c)

@@ -25,6 +25,8 @@
 
 `gradle uninstallRelease`  # 卸载Release模式包
 
+`gradle build --scan` #Build Scan
+
 ### 传递性依赖
 
 传递性依赖是指引入aar会自动去下载aar中的第三方dependencies。
@@ -50,8 +52,26 @@
 
 如果你是一个lib库的维护者，对于所有需要公开的 API 你应该使用 api 依赖配置，测试依赖或不让最终用户使用的依赖使用 implementation 依赖配置。[Gradle 依赖配置 api VS implementation](https://yuweiguocn.github.io/gradle-new-dependency-configurations/)
 
+### Gradle依赖排除
+
+##### 在dependency中排除
+
+```groovy
+implementation('org.jetbrains.anko:anko:0.10.8') {
+    exclude group: 'com.android.support'
+}
+```
+
+##### 强制使用某个版本
+
+```groovy
+implementation ('com.android.support:support-v4:28.0.0') {
+    force = true
+}
+```
 
 ### 注意
+
 * 如果在Mac系统中运行`./gradlew`出现`gradlew: Permission Denied`的问题，请执行`chmod +x gradlew`
 
 * 当出现`Exception is:
@@ -62,6 +82,7 @@ org.gradle.api.GradleScriptException: A problem occurred evaluating root project
 * [配置构建变体](https://developer.android.com/studio/build/build-variants?hl=zh-cn)
 * [Gradle 完整指南（Android）](https://juejin.im/entry/57c7a00e0a2b58006b1a1358)
 * [Gradle特性](https://segmentfault.com/a/1190000004018407)
+* [一文彻底搞清 Gradle 依赖](https://mp.weixin.qq.com/s/1Wl5hEjFAfkjMrJLias-uA)
 * [构建神器Gradle](http://jiajixin.cn/2015/08/07/gradle-android/#)
 * [Gradle命令详解与导入第三方包](http://stormzhang.com/devtools/2015/01/05/android-studio-tutorial5/)
 * [Android Build Variants 为项目设置变种版本](http://blog.csdn.net/mq2553299/article/details/71429657?locationNum=13&fps=1)
