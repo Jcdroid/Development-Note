@@ -5,7 +5,7 @@
 第一次使用Gradle命令行输入时，需要给gradle配置环境变量，gradle目录可以在android studio中找到，然后把bin配置到windows的环境变量中，这样就可以使用gradle命令了。
 
 ### Gradle常用命令
-> 在Mac环境中对应将gradle替换成`./gradlew`，**注意：如果在windows中出现`gradle`命令找不到的情况，请使用`gradlew`，如果在`git bash`中无法运行，请尝试在cmd中运行**，或者执行`.\gradlew.bat`
+> 在Mac环境中对应将gradle替换成`./gradlew`，**注意：如果在windows中出现`gradle`命令找不到的情况，请使用`gradlew`（gradle的包装工具），如果在`git bash`中无法运行，请尝试在cmd中运行**，或者执行`.\gradlew.bat`
 
 `gradle -v`  # 查看gradle版本
 
@@ -89,3 +89,4 @@ org.gradle.api.GradleScriptException: A problem occurred evaluating root project
 * [Android Studio的两种模式及签名配置](http://www.cnblogs.com/details-666/p/keystore.html)
 * [How to set versionName in APK filename using gradle?](https://stackoverflow.com/questions/18332474/how-to-set-versionname-in-apk-filename-using-gradle)
 * [How to get current buildType in Android Gradle configuration](https://stackoverflow.com/questions/25739163/how-to-get-current-buildtype-in-android-gradle-configuration)
+* [gradlew 和 gradle命令的区别](<https://juejin.im/post/5ac9d48d6fb9a028e014bf15>)

@@ -46,5 +46,10 @@
 @Keep
 我们还在注解库里添加了@Keep注解，但是Gradle插件还支持（尽管已经在进行中）。被这个注解标注的类和方法在混淆的时候将不会被混淆。
 
+### 其他
+@TargetApi
+标记此变量、方法或类需要的Android api版本
+
 ### 参考
+
 * [Android注解支持(Support Annotations)](http://www.flysnow.org/2015/08/13/android-tech-docs-support-annotations.html)
