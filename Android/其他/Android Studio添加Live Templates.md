@@ -24,3 +24,13 @@
         return sInstance;
     }
     ```
+
+* **noInstance**。`Abbreviation = noInstance`，`Description = private empty constructor to prohibit instance creation`
+
+  ```java
+  private $class$() {
+      throw new UnsupportedOperationException("u can't instantiate me...");
+  }
+  ```
+
+  

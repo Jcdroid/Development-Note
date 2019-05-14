@@ -1,5 +1,28 @@
 # Android基础及面试相关
 
+### 知识点
+* 数据结构及算法
+* 启动流程及原理：Application、Activity的启动流程及原理
+* 多线程：多线程编程原理，熟悉多线程的使用
+* 常用控件：RecyclerView、ListView回收和复用机制、Bitmap图片的处理
+* 自定义控件：View绘制流程、View事件传递机制、Xfermode、贝塞尔曲线、onMeasure测量、Window
+* 常用类：Hander、IntentService、LocalBroadcastReceiver
+* 资源文件：Style、Theme复用、Layout复用、dimen复用、约束布局、dp和px的关系、矢量图片、9patch
+* 优化：内存优化、性能优化、布局优化和复用、流量优化
+* 适配：版本适配、ROM适配、屏幕适配
+* 网络通信：HTTP协议、TCP/IP、UDP协议、断点续传、文件读写、IO流
+* 数据通信安全：加密、重传、MD5、DES、RAS、https、证书、权限
+* 跨进程通信：AIDL、Messenger
+* 调试：adb、logcat、Android Profiler、LeakCanary
+* 测试：单元测试、Monkey、
+* NDK：C++、JNI
+* 手机功能：蓝牙、NFC、SD、Camera、Audio、MediaPlayer
+* 动画：Lottie、属性动画、补间动画
+* 数据持久化：Realm
+* 开发架构：模块化、组件化、MVVM、MVP
+* 开源库：Retrofit、Glide、RxJava、Lottie、Logger、brvah、Gson、CircleImageview、Immersionbar、Android-Crop、SpinKit、AutoDispose
+* 跨平台和新语言：Kotlin、Flutter、VUE、Weex
+
 ### 技巧
 
 * [80% 以上简历都是不合格的](https://mp.weixin.qq.com/s?__biz=MzAxNjI3MDkzOQ==&mid=405319124&idx=1&sn=1451f3e9ce9787b3576088c10bc9eac1#rd)

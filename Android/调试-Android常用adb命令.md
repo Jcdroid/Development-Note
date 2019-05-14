@@ -23,6 +23,7 @@
 * `adb logcat "*:PRIORITY"`：按优先级过滤，如`adb logcat "*:D"`
 * `adb logcat -s TAG_NAME:PRIORITY`：按标签名和优先级过滤，如`adb logcat -s TEST: W`
 * `adb logcat -c`：清除logcat的缓冲区
+* `adb logcat -v time>mylog.log`：输入日志到当前目录
 
 
 ### 参考
