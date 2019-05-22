@@ -30,7 +30,7 @@
 @ColorInt注解，表示你期望的是一个代表颜色的整数值。
 
 ### 权限注解
-如果你的方法的调用需要调用者有特定的权限，你可以使用@RequiresPermission注解。
+如果你的方法的调用需要调用者有特定的权限，你可以使用`@RequiresPermission`注解。
 
 ### 方法重写
 @CallSuper
@@ -48,6 +48,9 @@
 
 ### 其他
 @TargetApi
+标记此变量、方法或类需要的Android api版本
+
+@RequiresApi
 标记此变量、方法或类需要的Android api版本
 
 ### 参考

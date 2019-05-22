@@ -21,7 +21,7 @@
 * 数据持久化：Realm
 * 开发架构：模块化、组件化、MVVM、MVP
 * 开源库：Retrofit、Glide、RxJava、Lottie、Logger、brvah、Gson、CircleImageview、Immersionbar、Android-Crop、SpinKit、AutoDispose
-* 跨平台和新语言：Kotlin、Flutter、VUE、Weex
+* 跨平台和新语言：Kotlin、Dart、Flutter、VUE、Weex
 
 ### 技巧
 

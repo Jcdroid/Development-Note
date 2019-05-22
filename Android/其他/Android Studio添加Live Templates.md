@@ -7,7 +7,7 @@
 * **`getInstance`**。添加`Abbreviation`为`getInstance`，`Description`为`create a single instance`，`Template text`为：
 
     ```java
-    private static $class$ sInstance;
+    private volatile static $class$ sInstance;
     
     private $class$() {
         // no instance

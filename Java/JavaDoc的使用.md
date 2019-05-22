@@ -1,13 +1,17 @@
 # JavaDoc的使用
 
-* `@override`
 * `@super`
 * `@param`
 * `@return`
 * `@link` 文档注释添加方法或变量，内联标签
 * `@see` 文档注释添加url链接
-* 添加外部地址`<a href="<url>">Test</a>`
+* `<a href="<url>">Test</a>` 添加外部地址
 * `@Deprecated` 弃用
+* `@code` 注释中添加code
+* `<br>`换行
+* `<p>`换行
+* `<em>`斜体
+* `<strong>`粗体
 
 ### **javadoc 命令**
 
