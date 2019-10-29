@@ -1,6 +1,12 @@
 # Android Studio常用快捷键和技巧
 
+### 自定义的快捷键
+
+- Manage Projects...：`Ctrl+Alt+Shift+O`
+- Git Show History：`Alt+H`；Local Show History：`Alt+L`
+
 ### 快捷键（Mac平台）
+
 * `双击shift` Search EveryWhere
 * `shift+command+O` 快速查找文件
 * `ctrl+R` 运行项目

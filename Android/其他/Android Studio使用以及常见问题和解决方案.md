@@ -31,6 +31,15 @@
 * 出现R文件飘红，但是工程能正常运行的异常
 
 	> `gradle build tool`需要和`Android Studio`版本保持一致或更低
+	
+* 出现第三方库无法引用飘红，请检查是否是跨lib引用，如果是，请使用api来标记引用的库，而不是`implementation`
+
+* 下载`gradle-4.x-all.zip`出现`Connection reset`的问题，请手动到[官网](https://services.gradle.org/distributions/)下载对应的gradle存放到`C:\Users\<username>\.gradle\wrapper\dists`目录下
+
+* 出现build的时候提示`Re-download dependencies and sync project`时，检查时候是`gradle-wrapper.properties`的gradle版本过高，可以降低版本，因为gradle的版本要和gradle build tool的保持相关性
+
+* 编译时出现`AAPT2 error: check logs for details`的错误时，点击左侧的`Toggle View`切换到文本输出查看具体的错误
 
 ### 参考
+
 * [Mac上解决Android Studio文档显示fetching Documentation...](http://www.5ixuexiwang.com/html/biancheng/yidongkaifa/android/2016/1207/2152.html)

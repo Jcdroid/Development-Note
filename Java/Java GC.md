@@ -24,3 +24,9 @@ CMS收集器，基于标记清理
 G1收集器：整体上是基于标记 整理 ，局部采用复制
 
 综上：新生代基本采用复制算法，老年代采用标记整理算法。cms采用标记清理。
+
+
+
+### 参考
+
+* [咱们从头到尾说一次 Java 垃圾回收](https://www.infoq.cn/article/ZOYqRI4c-BFKmUBmzmKN?utm_source=rss&utm_medium=article)

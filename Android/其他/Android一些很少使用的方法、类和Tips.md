@@ -20,7 +20,30 @@
 
 ### HandlerThread
 
+### V4包
+
+* FragmentTabHost
+
+### V7包
+
+* ~~GradLayout~~（使用ConstraintLayout替换）
+
+### Design包
+
+- TabLayout、TabItem
+
+- AppBarLayout
+- NavigationView
+- SnackBar
+- BottomNavigationView
+- CheckableImageButton
+- HeaderBehavior、SwipeDismissBehavior
+- BottomSheetBehavior、BottomSheetDialog、BottomSheetDialogFragment
+- TextInputLayout、TextInputEditText
+- FloatingActionButton
+
 ### 其他
+
 * Linkify.addLinks() 这个类可以更方便的为文本添加超链接。 
 * Context的使用限制![image](../images/787C2710-5076-40BA-9ECD-52A734D6EF36.png)
 * LayoutInflater.inflate 

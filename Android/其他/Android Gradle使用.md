@@ -1,8 +1,20 @@
 # Android Gradle使用
 
-**全文在windows环境中使用**
+> 全文在windows环境中使用
 
 第一次使用Gradle命令行输入时，需要给gradle配置环境变量，gradle目录可以在android studio中找到，然后把bin配置到windows的环境变量中，这样就可以使用gradle命令了。
+
+### 出现不能下载包的问题
+
+请在Android根目录的`build.gradle`的`repositories`添加下面的aliyun映射的maven地址：
+
+```groovy
+ maven { url 'https://maven.aliyun.com/repository/jcenter' }
+ maven { url 'https://maven.aliyun.com/repository/google' }
+ maven { url 'https://maven.aliyun.com/repository/central' }
+ maven { url 'https://maven.aliyun.com/repository/public' }
+ maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+```
 
 ### Gradle常用命令
 > 在Mac环境中对应将gradle替换成`./gradlew`，**注意：如果在windows中出现`gradle`命令找不到的情况，请使用`gradlew`（gradle的包装工具），如果在`git bash`中无法运行，请尝试在cmd中运行**，或者执行`.\gradlew.bat`
@@ -73,9 +85,9 @@ implementation ('com.android.support:support-v4:28.0.0') {
 ### 注意
 
 * 如果在Mac系统中运行`./gradlew`出现`gradlew: Permission Denied`的问题，请执行`chmod +x gradlew`
-
 * 当出现`Exception is:
 org.gradle.api.GradleScriptException: A problem occurred evaluating root project`错误时，请检查`gradle/wrapper/gradle-wrapper.properties`中的gradle版本是否在在本机安装
+* 使用maven.aliyun时，如果出现`Could not GET xxx, Received status code 400 from server: Bad Request`，检查`.gradle/gradle.properties`中是否有代理地址未住释
 
 
 ### 参考
@@ -90,3 +102,4 @@ org.gradle.api.GradleScriptException: A problem occurred evaluating root project
 * [How to set versionName in APK filename using gradle?](https://stackoverflow.com/questions/18332474/how-to-set-versionname-in-apk-filename-using-gradle)
 * [How to get current buildType in Android Gradle configuration](https://stackoverflow.com/questions/25739163/how-to-get-current-buildtype-in-android-gradle-configuration)
 * [gradlew 和 gradle命令的区别](<https://juejin.im/post/5ac9d48d6fb9a028e014bf15>)
+* [android studio gradle插件无法下载，Could not GET xxx, Received status code 400 from server: Bad Request](https://blog.csdn.net/lqx_sunhan/article/details/82633275)
