@@ -2,7 +2,13 @@
 
 ### 使用技巧
 
+#### Debug技巧
+
 ### 常见问题和解决方案
+
+* Android Studio中滚动代码在某些Windows机器上会变成翻页滚动
+
+  > 在`Settings`-`Appearance & Behavior`-`Appearance`-`Window Options`中勾选`Smooth scrolling`即可
 
 * Android 中 Project、Module、Library 有什么区别？
 

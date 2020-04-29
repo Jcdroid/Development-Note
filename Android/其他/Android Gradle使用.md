@@ -6,7 +6,7 @@
 
 ### 出现不能下载包的问题
 
-请在Android根目录的`build.gradle`的`repositories`添加下面的aliyun映射的maven地址：
+请在Android根目录的`build.gradle`的`repositories`添加下面的[aliyun映射](https://maven.aliyun.com/mvn/view)的maven地址：
 
 ```groovy
  maven { url 'https://maven.aliyun.com/repository/jcenter' }

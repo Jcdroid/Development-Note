@@ -18,7 +18,7 @@
 * `adb shell input keyevent 82`：解锁屏幕
 * `adb shell ps`：查看所有进程
 * `adb shell ps <packagename>`或`adb shell ps | grep <packagename>`：显示指定应用的process信息
-* `adb logcat`：显示日志流
+* `adb logcat`：进入logcat模式，显示日志流
 * `adb logcat -s TAG_NAME`：按标签过滤
 * `adb logcat "*:PRIORITY"`：按优先级过滤，如`adb logcat "*:D"`
 * `adb logcat -s TAG_NAME:PRIORITY`：按标签名和优先级过滤，如`adb logcat -s TEST: W`

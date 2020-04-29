@@ -1,5 +1,7 @@
 # Android一些很少使用的方法、类和Tips
 
+## Class
+
 ### TextUtils
 * isEmpty
 * htmlEncode
@@ -20,18 +22,27 @@
 
 ### HandlerThread
 
+### LruCache
+
+### ScheduledExecutorService
+
+## Support
+
 ### V4包
 
 * FragmentTabHost
+* NestedScrollView
+* NestedScrollingParent
+* NestedScrollingChild
 
 ### V7包
 
-* ~~GradLayout~~（使用ConstraintLayout替换）
+* ~~GridLayout~~（使用ConstraintLayout替换）
+* SnapHelper
 
 ### Design包
 
 - TabLayout、TabItem
-
 - AppBarLayout
 - NavigationView
 - SnackBar
@@ -41,8 +52,14 @@
 - BottomSheetBehavior、BottomSheetDialog、BottomSheetDialogFragment
 - TextInputLayout、TextInputEditText
 - FloatingActionButton
+- CollapsingToolbarLayout
+- MaterialButton
+- MaterialCardView
+- BottomAppBar
+- HeaderBehavior
+- CoordinatorLayout（补充包，这个类并没有在com.android.support:design下，而是在com.android.support:coordinatorlayout下，只不过包名是使用同一个，可认为是在design下）
 
-### 其他
+## 其他
 
 * Linkify.addLinks() 这个类可以更方便的为文本添加超链接。 
 * Context的使用限制![image](../images/787C2710-5076-40BA-9ECD-52A734D6EF36.png)

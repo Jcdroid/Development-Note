@@ -1,5 +1,13 @@
 # Android基础及面试相关
 
+#### 系统知识点+相关资料
+* [AndroidKnowledgeSystem](https://github.com/feelschaotic/AndroidKnowledgeSystem)
+* [AdvancedAndroid](https://github.com/SusionSuc/AdvancedAndroid)
+* [Awesome-Android-Notebook](https://github.com/JsonChao/Awesome-Android-Notebook)
+* [AndroidNote](https://github.com/linsir6/AndroidNote)
+* [android-developer-roadmap-cn](https://www.wanandroid.com/blog/show/2708)
+* [CS-Notes](https://cyc2018.github.io/CS-Notes/#/)
+
 ### 知识点
 * 数据结构及算法
 * 启动流程及原理：Application、Activity的启动流程及原理
@@ -42,8 +50,10 @@
 * 经常遇到重复上传apk到fir的操作，并且通知不及时，最后写了一个python脚本自动上传apk到fir.im，并且用钉钉的webhook自动通知测试人员apk的更新状态
 
 ### 参考
+
 * [AndroidInterview-Q-A](https://github.com/JackyAndroid/AndroidInterview-Q-A)
 * [Android 开发工程师面试指南](https://www.diycode.cc/wiki/androidinterview)
+* [AndroidKnowledgeSystem](https://github.com/feelschaotic/AndroidKnowledgeSystem)
 * [Interview-Notebook](https://github.com/CyC2018/Interview-Notebook)
 * [android-interview](https://github.com/guoxiaoxing/android-interview)
 * [LearningNotes](https://github.com/francistao/LearningNotes)
@@ -64,4 +74,8 @@
 * [计算机网络基础 总结攻略](https://juejin.im/post/5ad7e6c35188252ebd06acfa?)
 * [面试时，问哪些问题能试出一个 Android 应用开发者真正的水平？](https://www.zhihu.com/question/19765032)
 * [玩安卓](http://www.wanandroid.com/)
-* [**给扔物线 HenCoder Plus 学员的一次分享文字版（包含面试简历信息）**](https://juejin.im/post/5bf212a46fb9a049de6cf57c)
+* [给扔物线 HenCoder Plus 学员的一次分享文字版（包含面试简历信息）](https://juejin.im/post/5bf212a46fb9a049de6cf57c)
+* [2020年中高级Android大厂面试秘籍，为你保驾护航金三银四，直通大厂](https://juejin.im/post/5e5b50eb6fb9a07cae136773)
+* [行情艰难，Android初中级面试题助你逆风翻盘，每题都有详细答案](https://mp.weixin.qq.com/s?src=11&timestamp=1583288080&ver=2195&signature=uXFWg0h44J6r6woKh25NYdC78fRfTgEeU8lu6RmHrvO-GiLjFeLqzJ7GHOAnPoSEaa4JVr9XZHK7vkf7oXiQL2WusJWxR8lAtdEaXmrjmW6NGtJfTZgsMbYpatLTTBxa&new=1)
+* [android-tech-frontier一个定期翻译国外Android优质的技术、开源库、软件架构设计、测试等文章的开源项目](https://github.com/hehonghui/android-tech-frontier)
+* [Android-Tips](https://github.com/tangqi92/Android-Tips)
