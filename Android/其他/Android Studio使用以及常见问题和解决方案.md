@@ -4,6 +4,10 @@
 
 #### Debug技巧
 
+### 常用设置
+
+默认代码超出100就会换行，如果想增大这个换行的出发条件，可在`Settings`-`Editor`-`Code Style`-`<语言>`-`Wrapping and Braces`-`Hard wrap at`中设置为`160`
+
 ### 常见问题和解决方案
 
 * Android Studio中滚动代码在某些Windows机器上会变成翻页滚动

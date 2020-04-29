@@ -1,4 +1,10 @@
 <code_scheme name="MyLikeCodeStyle" version="173">
+  <codeStyleSettings language="Dart">
+    <option name="RIGHT_MARGIN" value="160" />
+  </codeStyleSettings>
+  <codeStyleSettings language="JAVA">
+    <option name="RIGHT_MARGIN" value="160" />
+  </codeStyleSettings>
   <codeStyleSettings language="JavaScript">
     <option name="RIGHT_MARGIN" value="80" />
     <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
@@ -128,5 +134,8 @@
         </section>
       </rules>
     </arrangement>
+  </codeStyleSettings>
+  <codeStyleSettings language="kotlin">
+    <option name="RIGHT_MARGIN" value="160" />
   </codeStyleSettings>
 </code_scheme>
