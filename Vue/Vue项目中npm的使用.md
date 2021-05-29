@@ -13,7 +13,6 @@
 * registry地址：`http://r.cnpmjs.org/`
 
 ### 如何使用
---
 * 临时使用：
 
 		npm --registry https://registry.npm.taobao.org install express
@@ -35,6 +34,12 @@
 ### 项目构建
 1. `npm install`（当出现vue相关安装错误时，根据提示可使用`npm install --save vue-resource`）
 2. `npm run dev`即可
+
+### 常见问题
+
+* node-sass下载失败解决方案
+
+  > 先改为淘宝镜像，再分别尝试`npm install sass-loader --save-dev`和`npm install node-sass --save-dev`
 
 ### 参考
 * [国内优秀npm镜像推荐及使用](http://riny.net/2014/cnpm/)

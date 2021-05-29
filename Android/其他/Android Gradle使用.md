@@ -39,6 +39,10 @@
 
 `gradle build --scan` #Build Scan
 
+`gradle compileDebugJavaWithJavac` # debug调试执行javac命令，编译器遇到不能解析的内容出的异常（一次又一次编译项目时，始终找不到是java文件或者xml文件哪里出错了，logcat、message也不报错）
+
+`gradle compileDebugSources --stacktrace -info` # 如果上面的命令`gradle compileDebugJavaWithJavac`还不能解决，可以使用这条
+
 ### 传递性依赖
 
 传递性依赖是指引入aar会自动去下载aar中的第三方dependencies。

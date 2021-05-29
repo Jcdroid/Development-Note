@@ -28,3 +28,4 @@
 * [Flutter-learning](https://github.com/AweiLoveAndroid/Flutter-learning)
 * [Flutter 开发踩坑记录（干货总结）](https://juejin.im/post/5e58ceadf265da575918dd14)
 * [你们都用 Flutter 开发了什么 App？](https://www.zhihu.com/question/313562705)
+* [flutter-study](https://github.com/yang7229693/flutter-study)

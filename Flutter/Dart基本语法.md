@@ -31,5 +31,13 @@
 #### Stream
 `Stream`也是用于接收异步事件数据，和`Future`不同的是，它可以接收多个异步操作的结果（成功或失败）。 也就是说，在执行异步任务时，可以通过多次触发成功或失败事件来传递结果数据或错误异常。 `Stream`常用于会多次读取数据的异步任务场景，如网络内容下载、文件读写等。
 
+#### 操作符
+
+* `??`：如`AA??'999'`，AA为空，则返回999
+* `??=`：如`AA??='999'`，AA为空，则AA赋值为999
+* `~/`：如`AA~/999`，AA对于999整除
+* `?`：如`event?.fix()`，如果event为空，则不执行fix
+
 ### 参考
 * [Dart语言简介](https://book.flutterchina.club/chapter1/dart.html)
+* [Flutter完整开发实战详解(一、Dart语言和Flutter基础) ](https://juejin.im/post/5b631d326fb9a04fce524db2)

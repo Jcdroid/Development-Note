@@ -31,6 +31,12 @@
 * 开源库：Retrofit、Glide、RxJava、Lottie、Logger、brvah、Gson、CircleImageview、Immersionbar、Android-Crop、SpinKit、AutoDispose
 * 跨平台和新语言：Kotlin、Dart、Flutter、VUE、Weex
 
+### 具体问题
+
+- Android应用中哪些是Context，一个应用有多少个Context？
+
+  [Android Context熟悉还是陌生？](https://jianshu.com/p/cc0bb2a71ee8)
+
 ### 技巧
 
 * [80% 以上简历都是不合格的](https://mp.weixin.qq.com/s?__biz=MzAxNjI3MDkzOQ==&mid=405319124&idx=1&sn=1451f3e9ce9787b3576088c10bc9eac1#rd)
@@ -54,6 +60,7 @@
 * [AndroidInterview-Q-A](https://github.com/JackyAndroid/AndroidInterview-Q-A)
 * [Android 开发工程师面试指南](https://www.diycode.cc/wiki/androidinterview)
 * [AndroidKnowledgeSystem](https://github.com/feelschaotic/AndroidKnowledgeSystem)
+* [BestNote](https://github.com/pengMaster/BestNote)
 * [Interview-Notebook](https://github.com/CyC2018/Interview-Notebook)
 * [android-interview](https://github.com/guoxiaoxing/android-interview)
 * [LearningNotes](https://github.com/francistao/LearningNotes)
